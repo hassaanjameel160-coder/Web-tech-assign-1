@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 07: Responsive Web Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Web Technologies</h1>
+        <p>HTML & CSS</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#lectures">Lectures</a>
+        <a href="activities.html">Activities</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main class="container">
+        <div class="card">
+            <h2>Lecture 07: Responsive Web Design</h2>
+
+            <h3>Overview</h3>
+            <p>
+                Responsive Web Design (RWD) makes web pages look good and work well on all devices, including desktops, laptops, tablets, and mobile phones.
+            </p>
+
+            <h3>Key Concepts</h3>
+            <ul>
+                <li><b>Viewport Tag:</b> <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> sets the page width to fit device screens.</li>
+                <li><b>Media Queries:</b> <code>@media</code> rules apply CSS styles only when specific screen dimensions are met.</li>
+                <li><b>Flexible Layouts:</b> Using relative units like percentages (<code>%</code>) and Flexbox (<code>display: flex</code>) rather than fixed pixel widths.</li>
+            </ul>
+
+            <h3>Sample Program</h3>
+            <p>A simple responsive column layout using media queries and Flexbox:</p>
+
+            <div class="code-container">
+                <div class="code-header">HTML & CSS Code</div>
+                <pre><code>&lt;style&gt;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .column {
+        flex: 1 1 calc(33.333% - 12px);
+        background-color: #f1f5f9;
+        border: 1px solid #cbd5e1;
+        padding: 15px;
+        text-align: center;
+        min-width: 160px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .column {
+            flex: 1 1 100%;
+        }
+    }
+&lt;/style&gt;
+
+&lt;div class="row"&gt;
+    &lt;div class="column"&gt;Column 1&lt;/div&gt;
+    &lt;div class="column"&gt;Column 2&lt;/div&gt;
+    &lt;div class="column"&gt;Column 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+
+            <h3>Output</h3>
+            <div class="output-container">
+                <div class="output-header">Output</div>
+                <div class="output-body">
+                    <div class="demo-responsive-row">
+                        <div class="demo-responsive-col">
+                            <strong>Column 1</strong>
+                        </div>
+                        <div class="demo-responsive-col">
+                            <strong>Column 2</strong>
+                        </div>
+                        <div class="demo-responsive-col">
+                            <strong>Column 3</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lecture-nav-bottom">
+                <a href="lecture6.html" class="nav-pill">&larr; Prev: Lecture 06</a>
+                <a href="index.html#lectures" class="nav-pill outline">Course Index</a>
+                <a href="activities.html" class="nav-pill">Next: Activities &rarr;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Tech|By Hassaan</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 06: CSS Box Model and Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Web Technologies</h1>
+        <p>HTML & CSS</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#lectures">Lectures</a>
+        <a href="activities.html">Activities</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main class="container">
+        <div class="card">
+            <h2>Lecture 06: CSS Box Model and Layout</h2>
+
+            <h3>Overview</h3>
+            <p>
+                In CSS, every HTML element is considered a rectangular box. The CSS Box Model describes how the content, padding, border, and margin work together to determine the element's total space on the screen.
+            </p>
+
+            <h3>The Four Parts of the Box Model</h3>
+            <ul>
+                <li><b>Content:</b> The actual text or image inside the box.</li>
+                <li><b>Padding:</b> Transparent space between the content and the border.</li>
+                <li><b>Border:</b> A line that goes around the padding and content.</li>
+                <li><b>Margin:</b> Transparent space outside the border, creating space between different elements.</li>
+            </ul>
+
+            <h3>Sample Program</h3>
+            <p>Applying the Box Model to an element:</p>
+
+            <div class="code-container">
+                <div class="code-header">HTML & CSS Code</div>
+                <pre><code>&lt;style&gt;
+    .box-demo {
+        width: 250px;
+        padding: 20px;
+        border: 4px solid #173b63;
+        margin: 15px 0;
+        background-color: #93c5fd;
+        text-align: center;
+        font-weight: bold;
+    }
+&lt;/style&gt;
+
+&lt;div class="box-demo"&gt;
+    Box Model Element
+&lt;/div&gt;</code></pre>
+            </div>
+
+            <h3>Output</h3>
+            <div class="output-container">
+                <div class="output-header">Output</div>
+                <div class="output-body">
+                    <div class="demo-box-example">
+                        Box Model Element
+                    </div>
+                    <p style="font-size: 13px; color: #64748b; margin-top: 8px;">
+                        This box has 250px width, 20px padding, 4px solid border, and 15px margin.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lecture-nav-bottom">
+                <a href="lecture5.html" class="nav-pill">&larr; Prev: Lecture 05</a>
+                <a href="index.html#lectures" class="nav-pill outline">Course Index</a>
+                <a href="lecture7.html" class="nav-pill">Next: Lecture 07 &rarr;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Tech|By Hassaan</p>
+    </footer>
+
+</body>
+</html>

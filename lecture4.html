@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 04: Introduction to CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Web Technologies</h1>
+        <p>HTML & CSS</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#lectures">Lectures</a>
+        <a href="activities.html">Activities</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main class="container">
+        <div class="card">
+            <h2>Lecture 04: Introduction to CSS</h2>
+
+            <h3>Overview</h3>
+            <p>
+                CSS (Cascading Style Sheets) is used to style and format HTML pages. It allows developers to control colors, typography, borders, and layouts.
+            </p>
+
+            <h3>How to Apply CSS</h3>
+            <ul>
+                <li><b>Inline CSS:</b> Using the <code>style</code> attribute directly in an HTML tag.</li>
+                <li><b>Internal CSS:</b> Inside a <code>&lt;style&gt;</code> tag within the <code>&lt;head&gt;</code> section.</li>
+                <li><b>External CSS:</b> Linked from a separate <code>.css</code> file using <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>.</li>
+            </ul>
+
+            <h3>Sample Program</h3>
+            <p>Example of styling a card box using CSS:</p>
+
+            <div class="code-container">
+                <div class="code-header">HTML & CSS Code</div>
+                <pre><code>&lt;style&gt;
+    .card-box {
+        background-color: #e0f2fe;
+        border: 2px solid #0284c7;
+        border-radius: 6px;
+        padding: 15px;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .card-box h3 {
+        color: #0369a1;
+        margin-bottom: 6px;
+    }
+
+    .card-box p {
+        color: #334155;
+        font-size: 14px;
+    }
+&lt;/style&gt;
+
+&lt;div class="card-box"&gt;
+    &lt;h3&gt;CSS Styling Demo&lt;/h3&gt;
+    &lt;p&gt;This box is styled using CSS properties.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+
+            <h3>Output</h3>
+            <div class="output-container">
+                <div class="output-header">Output</div>
+                <div class="output-body">
+                    <div class="demo-styled-box">
+                        <h3 style="color: #0369a1; margin-bottom: 6px; font-size: 18px;">CSS Styling Demo</h3>
+                        <p style="color: #334155; font-size: 14px; margin: 0;">This box is styled using CSS properties.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lecture-nav-bottom">
+                <a href="lecture3.html" class="nav-pill">&larr; Prev: Lecture 03</a>
+                <a href="index.html#lectures" class="nav-pill outline">Course Index</a>
+                <a href="lecture5.html" class="nav-pill">Next: Lecture 05 &rarr;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Tech|By Hassaan</p>
+    </footer>
+
+</body>
+</html>

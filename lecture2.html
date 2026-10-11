@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 02: HTML Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Web Technologies</h1>
+        <p>HTML & CSS</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#lectures">Lectures</a>
+        <a href="activities.html">Activities</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main class="container">
+        <div class="card">
+            <h2>Lecture 02: HTML Basics</h2>
+
+            <h3>Overview</h3>
+            <p>
+                HTML (HyperText Markup Language) uses tags to structure text, headings, lists, links, and media elements on a web page.
+            </p>
+
+            <h3>Topics Covered</h3>
+            <ul>
+                <li><b>Headings:</b> <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> define heading hierarchy.</li>
+                <li><b>Paragraphs:</b> <code>&lt;p&gt;</code> creates blocks of text.</li>
+                <li><b>Text Formatting:</b> <code>&lt;b&gt;</code> (bold), <code>&lt;i&gt;</code> (italic), <code>&lt;mark&gt;</code> (highlighted text).</li>
+                <li><b>Lists:</b> <code>&lt;ul&gt;</code> for bulleted lists and <code>&lt;ol&gt;</code> for numbered lists.</li>
+                <li><b>Links:</b> <code>&lt;a href="..."&gt;</code> creates clickable hyperlinks.</li>
+            </ul>
+
+            <h3>Sample Program</h3>
+            <p>A sample program demonstrating basic HTML elements:</p>
+
+            <div class="code-container">
+                <div class="code-header">HTML Code</div>
+                <pre><code>&lt;h2&gt;HTML Basics Example&lt;/h2&gt;
+&lt;p&gt;
+    HTML is &lt;b&gt;easy to learn&lt;/b&gt; and &lt;i&gt;essential&lt;/i&gt; for web development.
+&lt;/p&gt;
+
+&lt;h3&gt;My Topics:&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Headings and Paragraphs&lt;/li&gt;
+    &lt;li&gt;Ordered and Unordered Lists&lt;/li&gt;
+    &lt;li&gt;Hyperlinks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+    Visit: &lt;a href="https://www.google.com" target="_blank"&gt;Google Search&lt;/a&gt;
+&lt;/p&gt;</code></pre>
+            </div>
+
+            <h3>Output</h3>
+            <div class="output-container">
+                <div class="output-header">Output</div>
+                <div class="output-body">
+                    <h2 style="color: #173b63; margin-bottom: 8px;">HTML Basics Example</h2>
+                    <p style="margin-bottom: 12px;">
+                        HTML is <b>easy to learn</b> and <i>essential</i> for web development.
+                    </p>
+
+                    <h3 style="color: #2878c8; font-size: 16px; margin-bottom: 6px;">My Topics:</h3>
+                    <ul style="margin-left: 20px; margin-bottom: 12px;">
+                        <li>Headings and Paragraphs</li>
+                        <li>Ordered and Unordered Lists</li>
+                        <li>Hyperlinks</li>
+                    </ul>
+
+                    <p style="margin-bottom: 0;">
+                        Visit: <a href="https://www.google.com" target="_blank" style="color: #2878c8; font-weight: bold;">Google Search</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="lecture-nav-bottom">
+                <a href="lecture1.html" class="nav-pill">&larr; Prev: Lecture 01</a>
+                <a href="index.html#lectures" class="nav-pill outline">Course Index</a>
+                <a href="lecture3.html" class="nav-pill">Next: Lecture 03 &rarr;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Tech|By Hassaan</p>
+    </footer>
+
+</body>
+</html>

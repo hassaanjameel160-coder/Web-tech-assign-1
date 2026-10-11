@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 05: CSS Selection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Web Technologies</h1>
+        <p>HTML & CSS</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#lectures">Lectures</a>
+        <a href="activities.html">Activities</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main class="container">
+        <div class="card">
+            <h2>Lecture 05: CSS Selection</h2>
+
+            <h3>Overview</h3>
+            <p>
+                CSS selectors are used to select the HTML elements you want to style. They allow you to apply rules to specific elements, groups of elements, or unique elements.
+            </p>
+
+            <h3>Common Types of Selectors</h3>
+            <ul>
+                <li><b>Element Selector:</b> Selects elements based on element name (e.g., <code>p</code>, <code>h1</code>).</li>
+                <li><b>Class Selector:</b> Selects elements with a specific class using a dot (e.g., <code>.highlight</code>).</li>
+                <li><b>ID Selector:</b> Selects a single element with a specific ID using a hash (e.g., <code>#header</code>).</li>
+                <li><b>Grouping Selector:</b> Selects multiple elements separated by commas (e.g., <code>h1, h2, p</code>).</li>
+            </ul>
+
+            <h3>Sample Program</h3>
+            <p>Program demonstrating element, class, and ID selectors:</p>
+
+            <div class="code-container">
+                <div class="code-header">HTML & CSS Code</div>
+                <pre><code>&lt;style&gt;
+    p {
+        color: #334155;
+        font-size: 14px;
+    }
+
+    .class-sample {
+        color: #b91c1c;
+        background-color: #fee2e2;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+
+    #id-sample {
+        color: #047857;
+        background-color: #d1fae5;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+&lt;/style&gt;
+
+&lt;p&gt;This is styled by an element selector.&lt;/p&gt;
+&lt;span class="class-sample"&gt;Styled with Class Selector (.class-sample)&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+&lt;span id="id-sample"&gt;Styled with ID Selector (#id-sample)&lt;/span&gt;</code></pre>
+            </div>
+
+            <h3>Output</h3>
+            <div class="output-container">
+                <div class="output-header">Output</div>
+                <div class="output-body">
+                    <div class="demo-selector-box">
+                        <p style="margin-bottom: 10px; color: #334155;">This is styled by an element selector.</p>
+                        <div style="margin-bottom: 10px;">
+                            <span class="class-sample">Styled with Class Selector (.class-sample)</span>
+                        </div>
+                        <div>
+                            <span id="id-sample">Styled with ID Selector (#id-sample)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lecture-nav-bottom">
+                <a href="lecture4.html" class="nav-pill">&larr; Prev: Lecture 04</a>
+                <a href="index.html#lectures" class="nav-pill outline">Course Index</a>
+                <a href="lecture6.html" class="nav-pill">Next: Lecture 06 &rarr;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Tech|By Hassaan</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 03: HTML Forms and Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Web Technologies</h1>
+        <p>HTML & CSS</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#lectures">Lectures</a>
+        <a href="activities.html">Activities</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main class="container">
+        <div class="card">
+            <h2>Lecture 03: HTML Forms and Media</h2>
+
+            <h3>Overview</h3>
+            <p>
+                HTML forms allow users to enter information such as text, selections, and choices to send to a web server. HTML also supports embedding media such as images, audio, and video.
+            </p>
+
+            <h3>Form Elements & Attributes</h3>
+            <ul>
+                <li><b>&lt;form&gt;:</b> Container for form controls with <code>action</code> and <code>method</code> (GET / POST).</li>
+                <li><b>&lt;label&gt;:</b> Caption for an input element.</li>
+                <li><b>&lt;input&gt;:</b> Accepts various types: <code>text</code>, <code>email</code>, <code>radio</code>, <code>checkbox</code>, <code>submit</code>.</li>
+                <li><b>&lt;select&gt;:</b> Creates a dropdown list with <code>&lt;option&gt;</code> tags.</li>
+                <li><b>Media tags:</b> <code>&lt;audio controls&gt;</code> and <code>&lt;video controls&gt;</code> for media playback.</li>
+            </ul>
+
+            <h3>Sample Program</h3>
+            <p>A simple registration form program:</p>
+
+            <div class="code-container">
+                <div class="code-header">HTML Code</div>
+                <pre><code>&lt;form action="#" method="POST" class="demo-form"&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label for="name"&gt;Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" placeholder="Enter your name"&gt;
+    &lt;/div&gt;
+
+    &lt;div class="form-group"&gt;
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" placeholder="Enter your email"&gt;
+    &lt;/div&gt;
+
+    &lt;div class="form-group"&gt;
+        &lt;label for="course"&gt;Course:&lt;/label&gt;
+        &lt;select id="course" name="course"&gt;
+            &lt;option value="web"&gt;Web Technologies&lt;/option&gt;
+            &lt;option value="se"&gt;Software Engineering&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+
+    &lt;div class="form-group"&gt;
+        &lt;label&gt;Gender:&lt;/label&gt;
+        &lt;div class="radio-group"&gt;
+            &lt;label&gt;&lt;input type="radio" name="gender" value="male" checked&gt; Male&lt;/label&gt;
+            &lt;label&gt;&lt;input type="radio" name="gender" value="female"&gt; Female&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            </div>
+
+            <h3>Output</h3>
+            <div class="output-container">
+                <div class="output-header">Output</div>
+                <div class="output-body">
+                    <form action="#" method="GET" class="demo-form" onsubmit="return false;">
+                        <div class="form-group">
+                            <label for="demo-name">Name:</label>
+                            <input type="text" id="demo-name" placeholder="Enter your name" value="Hassaan Jameel">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="demo-email">Email:</label>
+                            <input type="email" id="demo-email" placeholder="Enter your email" value="fa24-bse-070@gmail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="demo-course">Course:</label>
+                            <select id="demo-course">
+                                <option value="web" selected>Web Technologies</option>
+                                <option value="se">Software Engineering</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Gender:</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="demo-gender" value="male" checked> Male</label>
+                                <label><input type="radio" name="demo-gender" value="female"> Female</label>
+                            </div>
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="lecture-nav-bottom">
+                <a href="lecture2.html" class="nav-pill">&larr; Prev: Lecture 02</a>
+                <a href="index.html#lectures" class="nav-pill outline">Course Index</a>
+                <a href="lecture4.html" class="nav-pill">Next: Lecture 04 &rarr;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Tech|By Hassaan</p>
+    </footer>
+
+</body>
+</html>
